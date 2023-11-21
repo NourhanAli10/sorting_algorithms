@@ -34,8 +34,7 @@ void cocktail_sort_list(listint_t **list)
 
 	if (!list || !(*list) || !((*list)->next))
 		return;
-	do
-	{
+	do {
 		swapped = 0;
 		for (start = *list; start->next != end; start = start->next)
 		{

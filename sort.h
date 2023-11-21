@@ -39,6 +39,7 @@ void cocktail_sort_list(listint_t **list);
 void swap_nod(listint_t **list, listint_t *a, listint_t *b);
 /**task 6*/
 void counting_sort(int *array, size_t size);
+int get_maximum_value(int *array, int size);
 /**task 7*/
 void merge(int *array, size_t mid, size_t size, int *temp_array);
 void merge_sort(int *array, size_t size);
@@ -49,7 +50,10 @@ void heap_sort(int *array, size_t size);
 /** task 9*/
 void radix_sort(int *array, size_t size);
 /** task 10*/
-
+void bitonic_merge(int *array, size_t low, size_t count, int order);
+void bitonic_sort_recursive(int *array, size_t low, size_t count, int order);
 /**task 11*/
-
+int hoare_partition(int *array, int low, int high, size_t size);
+void quicksort(int *array, int low, int high, size_t size);
+void quick_sort_hoare(int *array, size_t size);
 #endif
